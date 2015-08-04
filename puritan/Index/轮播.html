@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>轮播</title>
+    <style type="text/css">
+        ul, ol {
+            list-style: none;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dingwei {
+            position: absolute;
+        }
+
+        .jiaodian li {
+            background: #898989;
+            width: 30px;
+            height: 8px;
+            margin-left: 2px;
+            cursor: pointer;
+            float: left;
+        }
+
+            .jiaodian li.ks-active {
+                background: #44b8ff;
+            }
+
+        .left_nav {
+            background: url(https://img.alicdn.com/imgextra/i4/1968965736/TB2c6mXeXXXXXb9XXXXXXXXXXXX-1968965736.png) no-repeat;
+            width: 217px;
+            height: 480px;
+        }
+
+            .left_nav .left_navUl li {
+                width: 217px;
+                height: 80px;
+                position: relative;
+            }
+
+                .left_nav .left_navUl li:hover {
+                    background: url(https://img.alicdn.com/imgextra/i3/1968965736/TB269mbeXXXXXXzXpXXXXXXXXXX-1968965736.jpg) no-repeat;
+                }
+
+                .left_nav .left_navUl li:before {
+                    position: absolute;
+                    left: -6px;
+                    top: 0px;
+                    z-index: 99;
+                    display: block;
+                    opacity: 0;
+                    content: "";
+                    background: url(https://img.alicdn.com/imgextra/i2/1968965736/TB2URSaeXXXXXb3XXXXXXXXXXXX-1968965736.png) no-repeat;
+                    width: 6px;
+                    height: 80px;
+                    transition: all 0.15s ease-out 0s;
+                    -webkit-transition: all 0.15s ease-out 0s;
+                    -moz-transition: all 0.15s ease-out 0s;
+                }
+
+                .left_nav .left_navUl li:after {
+                    position: absolute;
+                    left: 190px;
+                    top: 33px;
+                    z-index: 99;
+                    display: block;
+                    opacity: 0;
+                    content: "";
+                    background: url(https://img.alicdn.com/imgextra/i4/1968965736/TB2kiX8eXXXXXXvXpXXXXXXXXXX-1968965736.png) no-repeat;
+                    width: 9px;
+                    height: 13px;
+                    transition: all 0.15s ease-out 0s;
+                    -webkit-transition: all 0.15s ease-out 0s;
+                    -moz-transition: all 0.15s ease-out 0s;
+                }
+
+                .left_nav .left_navUl li:hover:after {
+                    opacity: 1;
+                }
+
+                .left_nav .left_navUl li:hover:before {
+                    opacity: 1;
+                }
+
+            .left_nav .left_navUl .left_navUl_content {
+                width: 179px;
+                height: 79px;
+                border-bottom: 1px solid #c9caca;
+                margin-left: 18px;
+            }
+
+            .left_nav .left_navUl li .no_bb_bottom {
+                border-bottom: none;
+            }
+
+            .left_nav .left_navUl .left_navUl_content a {
+                color: #898989;
+                font-family: '微软雅黑';
+            }
+
+            .left_nav .left_navUl li:hover h1 a {
+                color: #ff800f;
+                text-decoration: underline;
+            }
+
+            .left_nav .left_navUl .left_navUl_content h1 {
+                padding-top: 15px;
+                margin-left: 20px;
+            }
+
+                .left_nav .left_navUl .left_navUl_content h1 a {
+                    color: #3e3a39;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+
+            .left_nav .left_navUl .left_navUl_content div {
+                margin-left: 22px;
+            }
+
+                .left_nav .left_navUl .left_navUl_content div a {
+                    margin-right: 10px;
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+
+            .left_nav .left_navUl .left_navUl_content a:hover {
+                color: #ff800f;
+                text-decoration: underline;
+            }
+
+        .hd_mk a {
+            display: block;
+            width: 231px;
+            height: 92px;
+            float: left;
+            cursor: pointer;
+        }
+
+        .hd_yhq a {
+            display: block;
+            width: 320px;
+            height: 121px;
+            float: left;
+            cursor: pointer;
+            margin-right: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="neirong" style="height:480px;">
+        <div class="position" style="height:480px;">
+            <div class="J_TWidget" data-widget-config="{'nextBtnCls':'next_gc','duration':1,'activeTriggerCls':'ks-active','easing':'easeBoth','viewSize':[1920],'effect':'scrollx','navCls':'ks-switchable-nav','prevBtnCls':'prev_gc','contentCls':'ks-switchable-content','autoplay':true,'interval':3,}" data-widget-type="Carousel">
+                <div class="prev_gc dingwei" style="display: none;"> &nbsp; </div>
+                <div class="next_gc dingwei" style=" display:none;"> &nbsp; </div>
+                <ul class="ks-switchable-content">
+                    <li> <a href="#" target="_blank"><img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2YQJ7eXXXXXazXXXXXXXXXXXX-1968965736.jpg" alt=" lunbo.jpg" /></a> </li>
+                    <li> <a href="#" target="_blank"><img src="https://img.alicdn.com/imgextra/i1/1968965736/TB2fSpTeXXXXXaRXpXXXXXXXXXX-1968965736.jpg" alt=" lunbo——01.jpg" /></a> </li>
+                </ul>
+                <ul class="ks-switchable-nav jiaodian dingwei" style=" left:880px;top: 457px;">
+                    <li class="ks-active"> &nbsp; </li>
+                    <li> &nbsp; </li>
+                </ul>
+            </div>
+            <div class="dingwei left_nav" style="left:255px; top:0px;">
+                <ul class="left_navUl">
+                    <li class="l_01">
+                        <div class="left_navUl_content">
+                            <h1><a>畅销产品</a></h1>
+                            <div><a>辅酶</a><a>鱼油</a><a>叶黄素</a> </div>
+                        </div>
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.l_01',
+      'align':{
+
+              'node':'.l_01',
+
+              'offset':[242,200],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:480px;width:272px;"> <a href="#" target="_blank"> <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB2Qih_eXXXXXXQXpXXXXXXXXXX-1968965736.png" alt=" 弹出层切片3.png" /></a> </div>
+                        </div>
+                    </li>
+                    <li class="l_02">
+                        <div class="left_navUl_content">
+                            <h1><a>新品上架</a></h1>
+                            <div><a>卵磷脂</a><a>叶黄素提取物</a></div>
+                        </div>
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.l_02',
+      'align':{
+
+              'node':'.l_02',
+
+              'offset':[242,120],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:480px;width:272px;"> <a href="#" target="_blank"> <img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2.KugeXXXXXb3XXXXXXXXXXXX-1968965736.png" alt=" 弹出层切片-新品上架.png" /></a> </div>
+                        </div>
+                    </li>
+                    <li class="l_03">
+                        <div class="left_navUl_content">
+                            <h1><a>保税仓热卖</a></h1>
+                            <div><a>维生素D</a><a>氨糖</a><a>玛卡</a> </div>
+                        </div>
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.l_03',
+      'align':{
+
+              'node':'.l_03',
+
+              'offset':[242,40],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:480px;width:272px;"> <a href="#" target="_blank"> <img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2.KugeXXXXXb3XXXXXXXXXXXX-1968965736.png" alt=" 弹出层切片-新品上架.png" /></a> </div>
+                        </div>
+                    </li>
+                    <li class="l_04">
+                        <div class="left_navUl_content">
+                            <h1><a>视力保护专区</a></h1>
+                            <div><a>叶黄素</a><a>辅酶</a><a>维生素A</a> </div>
+                        </div>
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.l_04',
+      'align':{
+
+              'node':'.l_04',
+
+              'offset':[242,-40],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:480px;width:272px;"> <a href="#" target="_blank"> <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB2T9SAeXXXXXXgXXXXXXXXXXXX-1968965736.png" alt=" 弹出层切片4.png" /></a> </div>
+                        </div>
+                    </li>
+                    <li class="l_05">
+                        <div class="left_navUl_content">
+                            <h1><a>亚健康专区</a></h1>
+                            <div><a>B族维生素</a><a>B-胡萝卜素</a></div>
+                        </div>
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.l_05',
+      'align':{
+
+              'node':'.l_05',
+
+              'offset':[242,-120],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:480px;width:272px;"> <a href="#" target="_blank"> <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB2jet5eXXXXXbAXpXXXXXXXXXX-1968965736.png" alt=" 弹出层切片5.png" /></a> </div>
+                        </div>
+                    </li>
+                    <li class="l_06">
+                        <div class="left_navUl_content no_bb_bottom">
+                            <h1><a>所有产品</a></h1>
+                            <div><a>黑玛卡</a><a>天然蜂胶</a><a>发肤甲</a> </div>
+                        </div>
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.l_06',
+      'align':{
+
+              'node':'.l_06',
+              'offset':[242,-200],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:480px;width:272px;"> <a href="#" target="_blank"> <img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2pGOweXXXXXaXXXXXXXXXXXXX-1968965736.png" alt=" 弹出层切片6.png" /></a> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="neirong" style="height:346px;">
+        <div class="position" style="height:346px;">
+            <div style="position:relative;" class="hd_mk">
+                <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB2bjibeXXXXXc5XXXXXXXXXXXX-1968965736.jpg" alt=" PP新首页_02.jpg" />
+                <div class="dingwei" style="left:511px; top:63px; width:934px; height:92px;">
+                    <a style="margin-right:131px;" class="yhq_01">
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.yhq_01',
+      'align':{
+
+              'node':'.yhq_01',
+
+              'offset':[-78,-1],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:77px;width:77px;"> <img src="https://img.alicdn.com/imgextra/i1/1968965736/TB22CmheXXXXXcXXXXXXXXXXXXX-1968965736.gif" alt=" PP新首页（超值优惠券gif）-21.gif" /> </div>
+                        </div>
+                    </a>
+
+                    <a style=" margin-right:110px;" class="yhq_02">
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.yhq_02',
+      'align':{
+
+              'node':'.yhq_02',
+
+              'offset':[-79,-1],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:77px;width:77px;"><img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2EamkeXXXXXbVXXXXXXXXXXXX-1968965736.gif" alt=" PP新首页（全场包邮gif）-4.gif" /> </div>
+                        </div>
+                    </a>
+
+                    <a class="yhq_03">
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.yhq_03',
+      'align':{
+
+              'node':'.yhq_03',
+
+              'offset':[-78,-1],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:77px;width:77px;"><img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2OzSaeXXXXXXyXpXXXXXXXXXX-1968965736.gif" alt=" PP新首页（满减满送gif）-3.gif" /></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div style="position:relative;" class="hd_yhq">
+                <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB2EByweXXXXXX0XXXXXXXXXXXX-1968965736.jpg" alt=" PP新首页_03.jpg" />
+                <div class="dingwei" style="left:466px; top:0px; width:1004px; height:121px;">
+                    <a class="yhq_04">
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.yhq_04',
+      'align':{
+
+              'node':'.yhq_04',
+
+              'offset':[-148,194],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:320px;width:25px;"><img src="https://img.alicdn.com/imgextra/i1/1968965736/TB2stOfeXXXXXc_XXXXXXXXXXXX-1968965736.gif" alt=" 立即领取1-gif.gif" /></div>
+                        </div>
+                    </a>
+                    <a class="yhq_05">
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.yhq_05',
+      'align':{
+
+              'node':'.yhq_05',
+
+              'offset':[-148,194],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:320px;width:25px;"><img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2Zqp7eXXXXXbNXpXXXXXXXXXX-1968965736.gif" alt=" 立即领取2-gif.gif" /></div>
+                        </div>
+                    </a>
+                    <a class="yhq_06">
+                        <div class="J_TWidget hidden" data-widget-type="Popup" data-widget-config="{
+
+      'trigger':'.yhq_06',
+      'align':{
+
+              'node':'.yhq_06',
+
+              'offset':[-148,194],
+              'points':['cc','cc']
+              }
+        }">
+                            <div style="height:320px;width:25px;"><img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2OyqXeXXXXXX8XpXXXXXXXXXX-1968965736.gif" alt=" 立即领取3-gif.gif" /></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
